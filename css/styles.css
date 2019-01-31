@@ -25,14 +25,19 @@ td, tr {
     background-color: white;
 }
 
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#palete{flex-basis: 33%;}
+
 #color-picker {
     background-color: antiquewhite;
     width: 722px;
     height: 50px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    margin: 0 auto;   
 }
 
 .color {
@@ -55,6 +60,8 @@ td, tr {
 #blue{background-color: blue;}
 
 #violet{background-color: violet;}
+
+#white{background-color: white;}
 
 #picked-color {
     width: 35px;
