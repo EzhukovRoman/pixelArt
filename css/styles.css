@@ -13,6 +13,22 @@ span {
     letter-spacing: 2px;
     font-size: 1.2em;
 }
+
+button {
+    border: .5px solid black;
+    border-radius: 3px;        
+    padding: 6px;    
+    background-color:darkred;
+    color: aliceblue;   
+}
+
+.save-load-buttons {    
+    display: flex;
+    justify-content: space-around;
+    width: 112px;
+    margin: 12px auto;
+}
+
 #container {
     margin-top: 12px;
 }
@@ -93,16 +109,42 @@ span {
     align-items: center;
 }
 
-#erace {
-    border: .5px solid black;
-    border-radius: 3px;        
-    padding: 6px;    
-    background-color:darkred;
-    color: aliceblue;   
+#erace {    
     margin-right: 18px; 
 }
 
 #custom-color-picker{
     margin: 0 6px;
     flex-basis: 50%;
+}
+
+#save, #load {
+    width:50px;
+}
+
+#save-tip, #load-tip {
+    position: absolute;    
+    top: 45px;
+    background-color: antiquewhite;
+    color: darkred;
+    padding: 6px;
+    border-radius: 4px;
+    width: 158px;
+    visibility: hidden;
+}
+
+#save-tip{
+    right: 47%;    
+}
+
+#load-tip{
+    right: 44%;    
+}
+
+#save-button:hover #save-tip{
+    visibility: visible;
+}
+
+#load-button:hover #load-tip{
+    visibility: visible;
 }
