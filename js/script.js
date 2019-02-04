@@ -1,6 +1,6 @@
 let pane = document.querySelector("#pane");
 let pickedColor = document.querySelector("#picked-color");
-let color = "";
+let color = "black";
 
 document.querySelector("#palete").addEventListener("click", pickColor);
 
